@@ -33,7 +33,7 @@ public class WobbleGoalArm extends SubsystemBase {
 
     private double encoderOffset = 0;
 
-    public WobbleGoalArm(MotorEx arm, ServoEx lazySusan, ServoEx claw, TouchSensor homeSensor, Telemetry tl) {
+    public WobbleGoalArm(MotorEx arm, ServoEx leftClaw, ServoEx rightClaw, TouchSensor homeSensor, Telemetry tl) {
         this.arm = arm;
         this.arm.setDistancePerPulse(360/CPR);
         arm.setInverted(false);
